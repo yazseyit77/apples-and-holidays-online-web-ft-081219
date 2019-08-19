@@ -17,7 +17,7 @@ holiday_hash =
      }
    }
 
-def second_supply_for_fourth_of_july(holiday_supplies)
+def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
   # {
   #   :winter => {
@@ -35,8 +35,8 @@ def second_supply_for_fourth_of_july(holiday_supplies)
   #   }
   # }
   # return the second element in the 4th of July array
-    holiday_supplies[:spring][:memorial_day].join(" ")
-    holiday_supplies[:spring][:fourth_of_july].join(" ")
+    holiday_hash[:spring][:memorial_day].join(" ")
+    holiday_hash[:spring][:fourth_of_july].join(" ")
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
